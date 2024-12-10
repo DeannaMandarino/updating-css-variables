@@ -56,3 +56,23 @@ body {
   filter: blur(var(--blur));
   background-color: var(--base-color);
 }
+
+@media (min-width: 736px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .settings__label {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .settings__label {
+    font-size: 3rem;
+  }
+}
