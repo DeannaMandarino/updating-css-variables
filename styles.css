@@ -1,7 +1,7 @@
 :root {
   --background-color: rgb(35, 37, 35);;
   --text-color: rgb(237, 237, 237);
-  --base-color: rgb(255, 214, 221);
+  --base-color: #ffd6dd;
   --spacing: 0px;
   --blur: 0px;
 }
@@ -46,6 +46,10 @@ body {
   margin-right: 1rem;
   font-size: 2rem;
   font-weight: 300;
+}
+
+.settings__input {
+  width: 120px;
 }
 
 .image__img {
