@@ -1,11 +1,13 @@
+/* Root variables for easier color and style customization */
 :root {
-  --background-color: rgb(35, 37, 35);;
+  --background-color: rgb(35, 37, 35);
   --text-color: rgb(237, 237, 237);
   --base-color: #ffd6dd;
   --spacing: 0px;
   --blur: 0px;
 }
 
+/* Global Reset */
 * {
   padding: 0;
   margin: 0;
@@ -22,8 +24,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   padding: 1.5rem;
+  line-height: 1.6;
 }
 
+/* Header styles */
 .header {
   margin-top: 5rem;
   font-size: 1.64rem;
@@ -33,34 +37,40 @@ body {
   color: var(--base-color);
 }
 
+/* Layout styles for header and settings section */
 .header, .settings {
   margin-bottom: 5rem;
 }
 
+/* Control container for the settings */
 .settings__control {
   display: inline-block;
   margin-right: 2rem;
 }
 
+/* Label styles for the inputs */
 .settings__label {
   margin-right: 1rem;
   font-size: 2rem;
   font-weight: 300;
 }
 
+/* Input styles */
 .settings__input {
-  width: 120px;
+  width: 12rem;
 }
 
+/* Image styling */
 .image__img {
   width: 90%;
-  max-width: 600px;
+  max-width: 60rem;
   height: auto;
   padding: var(--spacing);
   filter: blur(var(--blur));
   background-color: var(--base-color);
 }
 
+/* Media Queries for responsiveness */
 @media (min-width: 736px) {
   .header {
     font-size: 2rem;
@@ -78,5 +88,25 @@ body {
 
   .settings__label {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    font-size: 3rem;
+  }
+
+  .settings__label {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .settings__label {
+    font-size: 4rem;
   }
 }
