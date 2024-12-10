@@ -1,0 +1,25 @@
+:root {
+  --background-color: rgb(35, 37, 35);;
+  --text-color: rgb(237, 237, 237);
+  --base-color: rgb(255, 214, 221);
+  --spacing: 0px;
+  --blur: 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures border and padding do not affect element width/height */
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px for easier rem calculation */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1.5rem;
+}
